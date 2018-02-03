@@ -27,6 +27,12 @@ class Person {
 		// print the position
 		void print();
 
+		//getter
+		int getPosition(void) const;
+
+		//setter
+		void setPosition(int newPos);
+
 	private:
 		int position; // position occupied by the person at any point of the game
 						// Note: Because each position occupies a unique position initially, 

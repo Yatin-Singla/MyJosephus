@@ -6,6 +6,9 @@
 #ifndef __PERSON_H__
 #define __PERSON_H__
 
+#include <iostream>
+
+using namespace std;
 
 class Person {
 
@@ -15,7 +18,7 @@ class Person {
 		//		And of course, no two people can occupy the same position, and 
 		//		no person can occupy more than one position at any given time.
 		// ...
-		Person();
+		explicit Person(int pos = 0) :position(pos){};
 
 		// Destructor
 		// ...

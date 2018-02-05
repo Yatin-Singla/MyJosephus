@@ -18,3 +18,13 @@ void Person::setPosition(int newPos)
 	position = newPos;
 }
 
+bool Person::getHolding() const
+{
+	return isHolding;
+}
+
+void Person::setHolding(bool newValue)
+{
+	isHolding = newValue;
+}
+

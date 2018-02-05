@@ -29,9 +29,11 @@ class Person {
 
 		//getter
 		int getPosition(void) const;
+		bool getHolding() const;
 
 		//setter
 		void setPosition(int newPos);
+		void setHolding(bool newValue);
 
 	private:
 		int position; // position occupied by the person at any point of the game
@@ -40,6 +42,7 @@ class Person {
 						//		or name for that person.
 						//		And as the potato is passed around and people are eliminated,
 						//			that id can be retained.
+		bool isHolding; //tells us whether the person has the potato or not
 };
  
 #endif

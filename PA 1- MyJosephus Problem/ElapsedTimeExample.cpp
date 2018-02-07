@@ -1,3 +1,12 @@
+/*
+* Name: Yatin Singla
+* Programming Assignment: 1
+* Date: 3rd February 2018
+* Description: My Josephus Problem
+*
+*/
+
+
 //is an example code that shows how to calculate processing time in C++. 
 
 /*
@@ -13,9 +22,21 @@
 // be sure to include <ctime>
 #include<ctime>
 #include<iostream>
+#include "Person.h"
+#include "VectorMyJosephus.h"
+#include "ListMyJosephus.h"
+#include "TestVectorMyJosephus.h"
+#include "TestListMyJosephus.h"
 using namespace std;
+
+
 int main(int argc, char *argv[]) {
 
+	int choice = 0;
+	cout << "Please enter your choice of data structure for simulation:-" << endl;
+	cout << "1. List" << endl;
+	cout << "2. Vector" << endl;
+	cin >> choice;
 	/*
 	* We use the clock() program in library <ctime>. Program clock()
 	* returns the number of clock ticks elapsed since the process
@@ -24,15 +45,22 @@ int main(int argc, char *argv[]) {
 	* If you wonder why we don't use time(), it's because time()
 	* returns a value with a precision only to seconds.
 	*/
-
-	/* record the number of elapsed ticks before calling f() */
 	clock_t start = clock();
-
-	// ---> call f() here <---
-
-	/* record the number of elapsed ticks after calling f() */
+	/* record the number of elapsed ticks before calling f() */
+	if(choice == 1)
+	{ 
+		TestListMyJosephus TestList;
+		TestList.PlayGame();
+	}
+	else
+	{
+		// ---> call f() here <---
+		TestVectorMyJosephus TestVector;
+		TestVector.PlayGame();
+		/* record the number of elapsed ticks after calling f() */
+		
+	}
 	clock_t end = clock();
-
 	/*
 	* The number of ticks elapsed during the f() function call
 	* can be calculated by (end - start). The constant
@@ -43,9 +71,7 @@ int main(int argc, char *argv[]) {
 	*/
 	cout << "CPU elapsed time in seconds: "
 		<< (double)(end - start) / CLOCKS_PER_SEC << endl;
-
-
-
+		
 	return 0;
 }
 

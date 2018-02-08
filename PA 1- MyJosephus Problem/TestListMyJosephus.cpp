@@ -26,7 +26,8 @@ void TestListMyJosephus::PlayGame()
 	cin >> N;
 	cout << "Please enter the interval of elimination(M): " << endl;
 	cin >> M;
-
+//	N = 1024;
+//	M = 1024;
 	ListMyJosephus testJosephus(N, M);
 	clock_t start = clock();
 	testJosephus.PlayGame();

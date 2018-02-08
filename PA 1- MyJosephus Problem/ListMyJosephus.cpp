@@ -81,7 +81,7 @@ void ListMyJosephus::PlayGame(void)
 		//	cout << "At the end of round " << i << ":";
 		//	printAll();
 		//	system("pause");
-			system("cls");
+		//	system("cls");
 		}
 		else
 		{
@@ -98,7 +98,7 @@ void ListMyJosephus::PlayGame(void)
 	}
 	AvgElimTime = sum / j;
 //	system("pause");
-	system("cls");
+//	system("cls");
 //	printAll();
 //	ElimPeople.PrintAll();
 }

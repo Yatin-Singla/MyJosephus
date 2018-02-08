@@ -37,6 +37,7 @@ int main(int argc, char *argv[]) {
 	cout << "1. List" << endl;
 	cout << "2. Vector" << endl;
 	cin >> choice;
+//	choice = 2;
 	/*
 	* We use the clock() program in library <ctime>. Program clock()
 	* returns the number of clock ticks elapsed since the process

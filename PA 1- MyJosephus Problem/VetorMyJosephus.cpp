@@ -79,9 +79,9 @@ void VectorMyJosephus::PlayGame(void)
 			//set passes to original value
 			Passes = M;
 			//prints the number of players still playing after each round
-//			cout << "At the end of round " << i << ":";
-//			printAll();
-//			system("pause");
+			cout << "At the end of round " << i << ":";
+			printAll();
+			system("pause");
 			system("cls");
 		}
 		else
@@ -98,8 +98,8 @@ void VectorMyJosephus::PlayGame(void)
 		sum += *Titr;
 	}
 	AvgElimTime = (double)(sum / j);
-//	system("pause");
+	system("pause");
 	system("cls");
-//	printAll();
-//	ElimPeople.PrintAll();
+	printAll();
+	ElimPeople.PrintAll();
 }

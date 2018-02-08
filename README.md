@@ -11,3 +11,5 @@ one  person  is  left  (with  the  potato, of course), and that last�
 {0,1,2,3}, and player number 4 (i.e., the 5th player) wins; If M=1 and N=5,
 the order of elimination is {1,3,0,4} before 2 wins.    
 An animated example for M=2, N=5 is provided at the following address:  http://epsl.eecs.wsu.edu/wp‐content/uploads/2018/01/Josephus‐ProblemExample.pptx 
+
+To test the efficiency of the code please comment out all the system calls!
